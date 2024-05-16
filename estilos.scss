@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+$font: "Jost", sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+main {
+    height: 800px;
+    width: auto;
+    background-image: url(./assets/BACKGROUND.avif);
+    background-size: cover;
+    background-position: center;
+    h2 {
+        background-image: linear-gradient(to bottom , rgb(2, 32, 2) , rgb(255, 255, 255)) !important;
+        font-size: 25px;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.cards {
+    margin-top: 10px;
+    .guia{
+        img {
+            background-position: center;
+            filter: grayscale(0%);
+            transition: 0.5s;
+        }
+        img:hover {
+            filter: grayscale(100%) !important;
+            transform: scale(0.93);
+        }
+        .card-title{
+            text-shadow: 0 0 5px rgb(0, 27, 0);
+        }
+        .boton-cards {
+            background-color: green !important;
+            border: rgb(2, 32, 2);
+        }
+    }
+}
+
+header {
+    #logo {
+        width: 110px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 45px;
+        margin-left: 30px;
+        text-shadow: 0 0 5px green;
+    }
+
+    .navbar {
+        border-top: none !important;
+        border-bottom: none !important;
+        background-color: rgb(2, 32, 2) !important;
+    }
+
+    .container-fluid {
+        background-color: rgb(2, 32, 2);
+        display: flex;
+        align-items: center;
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+            vertical-align: center;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+            font-size: 35px;
+            padding: 0px;
+            .nav-link {
+                margin-right: 5px; // Ajusta el espacio entre los elementos de la barra de navegación
+            }
+        }
+    }
+}
+
+.bionos {
+        font-size: 30px;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 20px;
+        background-color: rgba(24, 23, 23, 0.911);
+        border-radius: 10px;
+        margin: 40px;
+        margin-top: 90px;
+}
+
+footer {
+    background-color: #0f0000;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+}
+
+footer p {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+}
+
+footer i {
+    display: inline-block;
+    margin-left: 10px !important;
+    font-size: 45px;
+    padding: 5px;
+    color: green;
+    vertical-align: middle;
+}
