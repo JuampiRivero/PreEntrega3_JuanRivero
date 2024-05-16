@@ -9,15 +9,31 @@ $font: "Jost", sans-serif;
     font-family: $font;
 }
 
-main {
+.inicio-main {
     height: 800px;
     width: auto;
     background-image: url(./assets/BACKGROUND.avif);
     background-size: cover;
     background-position: center;
-    h2 {
-        background-image: linear-gradient(to bottom , rgb(2, 32, 2) , rgb(255, 255, 255)) !important;
-        font-size: 25px;
+    .info {
+        background-image: linear-gradient(to bottom , rgb(2, 32, 2) , rgba(2, 32, 2, 0)) !important;
+        font-size: 30px;
+        text-shadow: 0 0 10px black;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+.otros-main {
+    height: 1200px;
+    width: auto;
+    background-image: url(./assets/ARBOLES.jpg);
+    background-size: cover;
+    background-position: center;
+    .info {
+        background-image: linear-gradient(to bottom , rgb(2, 32, 2) , rgba(2, 32, 2, 0)) !important;
+        font-size: 30px;
+        text-shadow: 0 0 10px black;
         padding: 10px;
         text-align: center;
     }
@@ -38,10 +54,14 @@ main {
         .card-title{
             text-shadow: 0 0 5px rgb(0, 27, 0);
         }
-        .boton-cards {
-            background-color: green !important;
-            border: rgb(2, 32, 2);
-        }
+    }
+}
+
+.boton {
+    text-decoration: none;
+    color: white;
+    .boton:hover {
+        color: whitesmoke;
     }
 }
 
@@ -118,4 +138,96 @@ footer i {
     padding: 5px;
     color: green;
     vertical-align: middle;
+}
+
+.articulos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 30px;
+
+    .articulo {
+        border: 1px black solid;
+        padding: 20px;
+        border-radius: 10px;
+        background-image: linear-gradient(to top, rgba(2, 32, 2, 0.747), rgba(0, 0, 0, 0.918)), url(./assets/BACKGROUND.avif);
+        background-size: cover;
+        background-position: center;
+        h2 {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        a {
+            color: white;
+            padding: 5px 7px;
+            margin-top: 3px;
+            font-size: 20px;
+            text-shadow: 0 0 5px black;
+            border: 2px solid rgb(2, 32, 2);
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.5s;
+            &:hover {
+                background-color: darkgreen;
+            }
+        }   
+        img {
+            width: 100%;
+            height: 350px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+.señales {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 30px;
+
+    .articulo {
+        border: 1px black solid;
+        padding: 20px;
+        border-radius: 10px;
+        background-image: linear-gradient(to top, rgba(2, 32, 2, 0.747), rgba(0, 0, 0, 0.918)), url(./assets/BACKGROUND.avif);
+        background-size: cover;
+        background-position: center;
+        display: flex; /* Agregar display flex */
+        flex-direction: column; /* Alinear contenido en columna */
+        justify-content: center; /* Centrar verticalmente */
+        
+        h2 {
+            margin-bottom: 10px;
+            font-size: 30px;
+            margin-top: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        a {
+            color: white;
+            padding: 5px 7px;
+            margin-top: 3px;
+            font-size: 20px;
+            text-shadow: 0 0 5px black;
+            border: 2px solid rgb(2, 32, 2);
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.5s;
+            &:hover {
+                background-color: darkgreen;
+            }
+        }   
+        img {
+            /* width: 100%; */
+            height: 250px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            align-self: center; /* Centrar horizontalmente */
+        }
+    }
 }
