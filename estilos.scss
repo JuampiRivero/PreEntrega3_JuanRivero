@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 $font: "Jost", sans-serif;
+$color: rgb(2, 32, 2);
 
 * {
     margin: 0;
@@ -23,10 +24,8 @@ $font: "Jost", sans-serif;
         text-align: center;
     }
 }
-
-
 .otros-main {
-    height: 800px;
+    height: 2650px;
     width: auto;
     background-image: url(./assets/ARBOLES.jpg);
     background-size: cover;
@@ -39,6 +38,7 @@ $font: "Jost", sans-serif;
         text-align: center;
     }
 }
+
 .señales-main {
     height: 800px;
     width: auto;
@@ -53,6 +53,7 @@ $font: "Jost", sans-serif;
         text-align: center;
     }
 }
+
 .nosotros-main {
     height: 800px;
     width: auto;
@@ -67,9 +68,25 @@ $font: "Jost", sans-serif;
         text-align: center;
     }
 }
+
+.contacto-main {
+    height: 850px;
+    width: auto;
+    background-image: url(./assets/ARBOLES.jpg);
+    background-size: cover;
+    background-position: center;
+    .info {
+        background-image: linear-gradient(to bottom , rgb(2, 32, 2) , rgba(2, 32, 2, 0)) !important;
+        font-size: 30px;
+        text-shadow: 0 0 10px black;
+        padding: 10px;
+        text-align: center;
+    }
+}
+
 .cards {
     margin-top: 10px;
-    .guia{
+    .guia {
         img {
             background-position: center;
             filter: grayscale(0%);
@@ -79,7 +96,7 @@ $font: "Jost", sans-serif;
             filter: grayscale(100%) !important;
             transform: scale(0.93);
         }
-        .card-title{
+        .card-title {
             text-shadow: 0 0 5px rgb(0, 27, 0);
         }
     }
@@ -128,21 +145,21 @@ header {
             font-size: 35px;
             padding: 0px;
             .nav-link {
-                margin-right: 5px; // Ajusta el espacio entre los elementos de la barra de navegación
+                margin-right: 5px;
             }
         }
     }
 }
 
 .bionos {
-        font-size: 30px;
-        color: #FFFFFF;
-        text-align: center;
-        padding: 20px;
-        background-color: rgba(24, 23, 23, 0.911);
-        border-radius: 10px;
-        margin: 40px;
-        margin-top: 90px;
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(24, 23, 23, 0.911);
+    border-radius: 10px;
+    margin: 40px;
+    margin-top: 90px;
 }
 
 footer {
@@ -201,7 +218,7 @@ footer i {
             &:hover {
                 background-color: darkgreen;
             }
-        }   
+        }
         img {
             width: 100%;
             height: 350px;
@@ -210,6 +227,7 @@ footer i {
         }
     }
 }
+
 .señales {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -223,9 +241,9 @@ footer i {
         background-image: linear-gradient(to top, rgba(2, 32, 2, 0.747), rgba(0, 0, 0, 0.918)), url(./assets/BACKGROUND.avif);
         background-size: cover;
         background-position: center;
-        display: flex; /* Agregar display flex */
-        flex-direction: column; /* Alinear contenido en columna */
-        justify-content: center; /* Centrar verticalmente */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         
         h2 {
             margin-bottom: 10px;
@@ -249,24 +267,183 @@ footer i {
             &:hover {
                 background-color: darkgreen;
             }
-        }   
+        }
         img {
-            /* width: 100%; */
             height: 300px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            align-self: center; /* Centrar horizontalmente */
+            align-self: center;
         }
     }
 }
 
 .mapa-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
 }
 
 .bio-nosotros {
-text-align: center;
+    text-align: center;
 }
+
+.texto-form {
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    background-color: $color;
+    border-radius: 10px;
+}
+
+.pedido {
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+    background-color: #530606a6;
+    border-radius: 10px;
+    margin: 20px; 
+    margin-top: 40px;
+}
+
+.formulario {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 20px;
+    color: white;
+    background-color: $color;
+    border-radius: 10px;
+}
+
+.contacto {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    margin-top: 5px; 
+}
+
+input[type="checkbox"] {
+    margin-right: 5px; 
+}
+
+input[type="submit"] {
+    background-color: green;
+    color: white; 
+    padding: 10px 20px;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+input[type="submit"]:hover {
+    background-color: darkolivegreen; 
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 40px;
+    }
+    .container-fluid .navbar-nav {
+        font-size: 30px;
+    }
+    .articulos, .señales {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 992px) {
+    header h1 {
+        font-size: 35px;
+    }
+    .container-fluid .navbar-nav {
+        font-size: 25px;
+    }
+    .bionos {
+        font-size: 25px;
+    }
+    .texto-form {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+    }
+    .container-fluid .navbar-nav {
+        font-size: 20px;
+    }
+    .info {
+        font-size: 25px;
+    }
+    .bionos, .texto-form {
+        font-size: 20px;
+    }
+    .articulos, .señales {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 25px;
+    }
+    .container-fluid .navbar-nav {
+        font-size: 15px;
+    }
+    .info {
+        font-size: 20px;
+    }
+    .bionos, .texto-form {
+        font-size: 15px;
+    }
+    .articulos, .señales {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 420px) {
+    header h1 {
+        font-size: 20px;
+    }
+    .container-fluid .navbar-nav {
+        font-size: 12px;
+    }
+    .info {
+        font-size: 18px;
+    }
+    .bionos, .texto-form {
+        font-size: 12px;
+    }
+    .articulos, .señales {
+        grid-template-columns: 1fr;
+    }
+    footer {
+        font-size: 20px;
+    }
+    footer i {
+        font-size: 35px;
+    }
+}
+@media (max-width: 800px) {
+    .cards .col-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 15px;
+    }
+    .inicio-main {
+height: 1800px;
+    }
+}
+

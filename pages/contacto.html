@@ -26,46 +26,61 @@
                         <a class="nav-link" href="../pages/guias.html">Guias</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Tutoriales</a>
+                        <a class="nav-link" href="./tutoriales.html">Tutoriales</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./nosotros.html">Nosotros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link active" href="#">Contacto</a>
                         </li>
                 </ul>
             </div>
             </div>
         </nav>
     </header>
-    <main class="señales-main">
-        <h2 class="info"><strong>TUTORIALES</strong></h2>
-        <section class="señales">
-            <article class="articulo">
-                <img src="../assets/BICICLETA.webp" alt="Tienda de campaña">
-                <h2>Cómo elegir la tienda de campaña adecuada</h2>
-                <p>Escoger la tienda de campaña correcta es esencial para una experiencia de acampada exitosa. Aprende qué factores debes considerar al seleccionar tu tienda.</p>
-                <a href="#">Leer más</a>
-            </article>
-        
-            <article class="articulo">
-                <img src="../assets/SIGNOS.jpg" alt="Fogata">
-                <h2>Cómo encender y mantener una fogata segura</h2>
-                <p>La fogata es el corazón del campamento, pero encenderla y mantenerla puede ser un desafío. Descubre consejos para hacer una fogata segura y mantenerla controlada.</p>
-                <a href="#">Leer más</a>
-            </article>
-        
-            <article class="articulo">
-                <img src="../assets/RESPETO.jpg" alt="Lista de verificación">
-                <h2>Lista de verificación para acampar</h2>
-                <p>No olvides nada importante en tu próxima aventura de camping. Aquí tienes una lista completa de todo lo que necesitas llevar contigo para tener un viaje exitoso.</p>
-                <a href="#">Leer más</a>
-            </article>
-        </section>        
-        
-        
-    </main>
+    <main class="contacto-main">
+        <h2 class="info"><strong>CONTACTO</strong></h2>
+        <h3 class="texto-form">Indicanos cualquier consulta y recomendacion famoso Guia Explorador!</h3>
+        <div class="formulario">
+            <form id="formcontacto" action="mailto:juann.p.rivero@gmail.com" method="post" enctype="multipart/form-data">
+                <div class="contacto">
+                    <h3>Nombre:</h3>
+                    <input placeholder="Tu nombre" type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="contacto">
+                    <h3>Correo electronico:</h3>
+                    <input placeholder="Tu email" type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <h3>Acerca de que es tu mensaje?</h3>
+                </div>
+                    <div>
+                        <input type="checkbox" id="checkbox" name="checkbox">
+                        <label for="checkbox">Nuevas guias</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="checkbox" name="checkbox">
+                        <label for="checkbox">Recomendaciones para la pagina</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="checkbox" name="checkbox">
+                        <label for="checkbox">Funcionamiento de la pagina</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="checkbox" name="checkbox">
+                        <label for="checkbox">Otro</label>
+                    </div>
+                <div class="contacto">
+                    <h3>Mensaje:</h3>
+                    <textarea required placeholder="Tu mensaje" name="mensaje" id="mensaje" cols="30" rows="5"></textarea>
+                </div>
+                <div>
+                    <input class="enviar" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </main>    
     <footer>
         <p>&copy; 2024 <strong>Supervivencia</strong>. Todos los derechos reservados.
         <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-beat"></i></a>

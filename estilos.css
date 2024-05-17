@@ -23,7 +23,7 @@
 }
 
 .otros-main {
-  height: 800px;
+  height: 2650px;
   width: auto;
   background-image: url(./assets/ARBOLES.jpg);
   background-size: cover;
@@ -60,6 +60,21 @@
   background-position: center;
 }
 .nosotros-main .info {
+  background-image: linear-gradient(to bottom, rgb(2, 32, 2), rgba(2, 32, 2, 0)) !important;
+  font-size: 30px;
+  text-shadow: 0 0 10px black;
+  padding: 10px;
+  text-align: center;
+}
+
+.contacto-main {
+  height: 850px;
+  width: auto;
+  background-image: url(./assets/ARBOLES.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.contacto-main .info {
   background-image: linear-gradient(to bottom, rgb(2, 32, 2), rgba(2, 32, 2, 0)) !important;
   font-size: 30px;
   text-shadow: 0 0 10px black;
@@ -214,9 +229,9 @@ footer i {
   background-image: linear-gradient(to top, rgba(2, 32, 2, 0.747), rgba(0, 0, 0, 0.918)), url(./assets/BACKGROUND.avif);
   background-size: cover;
   background-position: center;
-  display: flex; /* Agregar display flex */
-  flex-direction: column; /* Alinear contenido en columna */
-  justify-content: center; /* Centrar verticalmente */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .señales .articulo h2 {
   margin-bottom: 10px;
@@ -242,11 +257,10 @@ footer i {
   background-color: darkgreen;
 }
 .señales .articulo img {
-  /* width: 100%; */
   height: 300px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  align-self: center; /* Centrar horizontalmente */
+  align-self: center;
 }
 
 .mapa-container {
@@ -258,6 +272,162 @@ footer i {
 
 .bio-nosotros {
   text-align: center;
+}
+
+.texto-form {
+  font-size: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(2, 32, 2);
+  border-radius: 10px;
+}
+
+.pedido {
+  font-size: 30px;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(83, 6, 6, 0.6509803922);
+  border-radius: 10px;
+  margin: 20px;
+  margin-top: 40px;
+}
+
+.formulario {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 20px;
+  color: white;
+  background-color: rgb(2, 32, 2);
+  border-radius: 10px;
+}
+
+.contacto {
+  margin-bottom: 10px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+input[type=checkbox] {
+  margin-right: 5px;
+}
+
+input[type=submit] {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+input[type=submit]:hover {
+  background-color: darkolivegreen;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  header h1 {
+    font-size: 40px;
+  }
+  .container-fluid .navbar-nav {
+    font-size: 30px;
+  }
+  .articulos, .señales {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 992px) {
+  header h1 {
+    font-size: 35px;
+  }
+  .container-fluid .navbar-nav {
+    font-size: 25px;
+  }
+  .bionos {
+    font-size: 25px;
+  }
+  .texto-form {
+    font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 30px;
+  }
+  .container-fluid .navbar-nav {
+    font-size: 20px;
+  }
+  .info {
+    font-size: 25px;
+  }
+  .bionos, .texto-form {
+    font-size: 20px;
+  }
+  .articulos, .señales {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 576px) {
+  header h1 {
+    font-size: 25px;
+  }
+  .container-fluid .navbar-nav {
+    font-size: 15px;
+  }
+  .info {
+    font-size: 20px;
+  }
+  .bionos, .texto-form {
+    font-size: 15px;
+  }
+  .articulos, .señales {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 420px) {
+  header h1 {
+    font-size: 20px;
+  }
+  .container-fluid .navbar-nav {
+    font-size: 12px;
+  }
+  .info {
+    font-size: 18px;
+  }
+  .bionos, .texto-form {
+    font-size: 12px;
+  }
+  .articulos, .señales {
+    grid-template-columns: 1fr;
+  }
+  footer {
+    font-size: 20px;
+  }
+  footer i {
+    font-size: 35px;
+  }
+}
+@media (max-width: 800px) {
+  .cards .col-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: 15px;
+  }
+  .inicio-main {
+    height: 1800px;
+  }
 }
 
 /*# sourceMappingURL=estilos.css.map */
