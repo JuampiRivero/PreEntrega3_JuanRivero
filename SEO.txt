@@ -1,0 +1,8 @@
+Aplique alt en Imagenes
+Aplique Keywords al inicio de todos los htmls
+Agregue descripciones al inicio de todos los htmls
+Lo hice responsivo
+Simple de leer
+Simple de entender
+Utilce bien las jerearquias de h1,h2,h3.
+Cree titulos personalizados para cada pagina
