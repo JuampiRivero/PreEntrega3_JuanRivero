@@ -52,6 +52,21 @@
   text-align: center;
 }
 
+.nosotros-main {
+  height: 800px;
+  width: auto;
+  background-image: url(./assets/ARBOLES.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.nosotros-main .info {
+  background-image: linear-gradient(to bottom, rgb(2, 32, 2), rgba(2, 32, 2, 0)) !important;
+  font-size: 30px;
+  text-shadow: 0 0 10px black;
+  padding: 10px;
+  text-align: center;
+}
+
 .cards {
   margin-top: 10px;
 }
@@ -232,6 +247,17 @@ footer i {
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   align-self: center; /* Centrar horizontalmente */
+}
+
+.mapa-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.bio-nosotros {
+  text-align: center;
 }
 
 /*# sourceMappingURL=estilos.css.map */
